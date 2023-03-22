@@ -1,0 +1,162 @@
+﻿[
+  {
+    "Id": "AYANJULGOG",
+    "Title": "Intro to Scrum",
+    "Category": "Training",
+    "UserEvents": [
+      {
+        "UserId": "USERABCDE",
+        "EventId": "AYANJULGOG"
+      },
+      {
+        "UserId": "DSERABCDE",
+        "EventId": "AYANJULGOG"
+      }
+    ],
+    "Date": "2023-05-02T02:50:06"
+  },
+  {
+    "Id": "BYANJULGOG",
+    "Title": "Customers Q&A",
+    "Category": "Office Hours",
+    "UserEvents": [
+      {
+        "UserId": "USERABCDE",
+        "EventId": "BYANJULGOG"
+      },
+      {
+        "UserId": "FSERABCDE",
+        "EventId": "BYANJULGOG"
+      }
+    ],
+    "Date": "2023-05-02T01:50:06"
+  },
+  {
+    "Id": "CYANJULGOG",
+    "Title": "Managing People",
+    "Category": "Training",
+    "UserEvents": [
+      {
+        "UserId": "USERABCDE",
+        "EventId": "CYANJULGOG"
+      },
+      {
+        "UserId": "DSERABCDE",
+        "EventId": "CYANJULGOG"
+      }
+    ],
+    "Date": "2023-05-02T03:50:06"
+  },
+  {
+    "Id": "DYANJULGOG",
+    "Title": "Company Meeting",
+    "Category": "General",
+    "UserEvents": [
+      {
+        "UserId": "USERABCDE",
+        "EventId": "DYANJULGOG"
+      },
+      {
+        "UserId": "ASERABCDE",
+        "EventId": "DYANJULGOG"
+      }
+    ],
+    "Date": "2023-05-02T04:50:06"
+  },
+  {
+    "Id": "EYANJULGOG",
+    "Title": "Sprint Planning",
+    "Category": "Management",
+    "UserEvents": [
+      {
+        "UserId": "USERABCDE",
+        "EventId": "EYANJULGOG"
+      },
+      {
+        "UserId": "FSERABCDE",
+        "EventId": "EYANJULGOG"
+      }
+    ],
+    "Date": "2023-05-02T09:50:06"
+  },
+  {
+    "Id": "FYANJULGOG",
+    "Title": "Backlog Refinement",
+    "Category": "Management",
+    "UserEvents": [
+      {
+        "UserId": "USERABCDE",
+        "EventId": "FYANJULGOG"
+      },
+      {
+        "UserId": "FSERABCDE",
+        "EventId": "FYANJULGOG"
+      }
+    ],
+    "Date": "2023-04-02T05:50:06"
+  },
+  {
+    "Id": "GYANJULGOG",
+    "Title": "Retrospective",
+    "Category": "Devs",
+    "UserEvents": [
+      {
+        "UserId": "USERABCDE",
+        "EventId": "GYANJULGOG"
+      },
+      {
+        "UserId": "ASERABCDE",
+        "EventId": "GYANJULGOG"
+      }
+    ],
+    "Date": "2023-03-02T05:50:06"
+  },
+  {
+    "Id": "IYANJULGOG",
+    "Title": "How to write Unit Tests",
+    "Category": "Training",
+    "UserEvents": [
+      {
+        "UserId": "USERABCDE",
+        "EventId": "IYANJULGOG"
+      },
+      {
+        "UserId": "LSERABCDE",
+        "EventId": "IYANJULGOG"
+      }
+    ],
+    "Date": "2023-05-02T05:50:06"
+  },
+  {
+    "Id": "JYANJULGOG",
+    "Title": "Customers Offer",
+    "Category": "Office Hours",
+    "UserEvents": [
+      {
+        "UserId": "USERABCDE",
+        "EventId": "JYANJULGOG"
+      },
+      {
+        "UserId": "DSERABCDE",
+        "EventId": "JYANJULGOG"
+      }
+    ],
+    "Date": "2023-05-01T05:50:06"
+  },
+  {
+    "Id": "KYANJULGOG",
+    "Title": "Senior dev interview",
+    "Category": "Interview",
+    "UserEvents": [
+      {
+        "UserId": "USERABCDE",
+        "EventId": "KYANJULGOG"
+      },
+      {
+        "UserId": "ASERABCDE",
+        "EventId": "KYANJULGOG"
+      }
+    ],
+    "Date": "2023-05-02T05:50:06"
+  }
+]

@@ -1,0 +1,42 @@
+[
+  {
+    "UserId": "USERABCDE",
+    "FirstName": "Kate",
+    "LastName": "Lorenz",
+    "Password": "kate.lorenz",
+    "Email": "klorenz@hrcorp.com",
+    "Role": "Administrator"
+  },
+  {
+    "UserId": "ASERABCDE",
+    "FirstName": "Anthony",
+    "LastName": "Murray",
+    "Password": "anthony.murray",
+    "Email": "amurray@hrcorp.com",
+    "Role": "User"
+  },
+  {
+    "UserId": "DSERABCDE",
+    "FirstName": "Tatiana",
+    "LastName": "Rivers",
+    "Password": "tatiana.rivers",
+    "Email": "trivers@hrcorp.com",
+    "Role": "User"
+  },
+  {
+    "UserId": "FSERABCDE",
+    "FirstName": "Thomas",
+    "LastName": "Scott",
+    "Password": "thomas.scott",
+    "Email": "tscott@hrcorp.com",
+    "Role": "User"
+  },
+  {
+    "UserId": "LSERABCDE",
+    "FirstName": "Ruddy",
+    "LastName": "Bettam",
+    "Password": "ruddy.bettam",
+    "Email": "rbettam@hrcorp.com",
+    "Role": "User"
+  }
+]
