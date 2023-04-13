@@ -14,9 +14,17 @@
             this.dataContext = dataContext;
         }
 
+        public Event[] GetAll()
+        {
+            return this.dataContext.Events
+                                   .Include(ev => ev.UserEvents)
+                                   .ToArray();
+        }
+
         public Event[] GetAllForUser(string email)
         {
             var user = this.dataContext.Users
+                                       .Include(u => u.UserEvents)
                                        .FirstOrDefault(user => user.Email == email);
 
             return this.dataContext.Events
@@ -59,7 +67,7 @@
                 eventEntity.Title = model.Title != null ? model.Title : eventEntity.Title;
                 eventEntity.Date = model.Date != null ? model.Date : eventEntity.Date;
                 eventEntity.Category = model.Category != null ? model.Category : eventEntity.Category;
-                eventEntity.UserEvents = model.UserEvents.Count !> 0 ? model.UserEvents : eventEntity.UserEvents;
+                eventEntity.UserEvents = model.UserEvents?.Count !> 0 ? model.UserEvents : eventEntity.UserEvents;
 
                 this.dataContext.SaveChanges();
             }

@@ -25,9 +25,25 @@
             this.logger = logger;
         }
 
-        [HttpGet]
+        [HttpGet("All")]
         [Authorize]
         public ActionResult<Event[]> GetAll()
+        {
+            try
+            {
+                var events = this.eventService.GetAll();
+                return Ok(events);
+            }
+            catch (Exception error)
+            {
+                logger.LogError(error.Message);
+                return StatusCode(500);
+            }
+        }
+
+        [HttpGet]
+        [Authorize]
+        public ActionResult<Event[]> GetAllForUser()
         {
             try
             {
@@ -73,6 +89,8 @@
                 if (ModelState.IsValid)
                 {
                     var mappedModel = this.mapper.Map<EventInputModel, Event>(model);
+                    var users = model.UserEmails.Select(x => this.authService.GetByEmail(x));
+                    mappedModel.UserEvents = users.Select(x => new UserEvent() { EventId = model.Id, UserId = x.UserId, User = x }).ToList();
                     var eventEntity = this.eventService.Create(mappedModel);
                     return Ok(eventEntity);
                 }

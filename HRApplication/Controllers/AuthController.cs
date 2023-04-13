@@ -35,7 +35,7 @@ namespace HRApplication.Controllers
                         var user = this.authService.GetByEmail(userModel.Email);
                         var token = this.authService.GenerateJwtToken(userModel.Email, user.Role);
 
-                        return Ok(token);
+                        return Ok(Json(token));
                     }
                     return BadRequest("Email or password are not correct!");
                 }
@@ -74,7 +74,7 @@ namespace HRApplication.Controllers
                     if (user != null)
                     {
                         var token = this.authService.GenerateJwtToken(user.Email, mappedModel.Role);
-                        return Ok(token);
+                        return Ok(Json(token));
 
                     }
 

@@ -37,6 +37,11 @@
             return this.dataContext.Users.FirstOrDefault(c => c.UserId == id);
         }
 
+        public User[] GetAll()
+        {
+            return this.dataContext.Users.ToArray();
+        }
+
         public User GetByEmail(string email)
         {
             return this.dataContext.Users.FirstOrDefault(c => c.Email == email);
@@ -94,6 +99,16 @@
             var t = decodedToken.ReadJwtToken(token.Substring(indexOfTokenValue));
 
             return t.Payload.FirstOrDefault(x => x.Key == "email").Value.ToString();
+        }
+
+        public User ChangeRole(string email, string role)
+        {
+            var user = this.GetByEmail(email);
+            user.Role = role;
+            this.dataContext.SaveChanges();
+
+
+            return user;
         }
     }
 }
