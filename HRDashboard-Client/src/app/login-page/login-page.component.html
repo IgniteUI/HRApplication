@@ -1,0 +1,18 @@
+<div class="column-layout background"></div>
+<div class="column-layout group">
+  <h2 class="h2">
+    Login
+  </h2>
+  <p class="error-message">{{errorMessage}}</p>
+  <igx-input-group type="border" class="input">
+    <input type="text" igxInput [(ngModel)]="email"/>
+    <label igxLabel>Email</label>
+  </igx-input-group>
+  <igx-input-group type="border" class="input_1">
+    <input type="password" igxInput [(ngModel)]="password"/>
+    <label igxLabel>Password</label>
+  </igx-input-group>
+  <button (click)="onSubmit($event)" igxButton="raised" igxRipple class="button">
+    Login
+  </button>
+</div>

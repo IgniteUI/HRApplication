@@ -1,0 +1,51 @@
+<div class="row-layout group">
+  <div class="column-layout group_1">
+    <div class="column-layout group_2">
+      <div class="row-layout group_3">
+        <div class="column-layout group_4">
+          <h5 class="h5">
+            Good Morning, {{email}}!
+          </h5>
+          <p class="text">
+            Your Highlights
+          </p>
+        </div>
+      </div>
+      <div class="row-layout group_5">
+        <igx-card *ngFor="let event of myEvents; index as i;"type="outlined" class="card">
+          <igx-card-media height="200px">
+            <img src="/assets/Illustration1.svg" class="image" />
+          </igx-card-media>
+          <igx-card-header>
+            <h3 igxCardHeaderTitle>
+              {{event.title}}
+            </h3>
+            <h5 igxCardHeaderSubtitle>
+              {{event.category}}
+            </h5>
+            <h5 igxCardHeaderSubtitle>
+              {{event.date}}
+            </h5>
+          </igx-card-header>
+        </igx-card>
+      </div>
+    </div>
+    <div class="row-layout group_6" *ngIf="isUserAdmin()">
+      <div class="column-layout group_7">
+        <h6 class="h6">
+          All Events
+        </h6>
+        <igx-grid [data]="hRDashboardEventAll" primaryKey="id" displayDensity="cosy" [rowEditable]="true" [allowFiltering]="true" filterMode="excelStyleFilter" (rowEditDone)="eventRowEditDone($event)" (rowDeleted)="eventRowDeleted($event)" class="grid">
+          <igx-column field="id" dataType="string" header="id" [sortable]="true" [selectable]="false"></igx-column>
+          <igx-column field="title" dataType="string" header="title" [sortable]="true" [selectable]="false"></igx-column>
+          <igx-column field="category" dataType="string" header="category" [sortable]="true" [selectable]="false"></igx-column>
+          <igx-column field="date" dataType="date" header="date" [sortable]="true" [selectable]="false"></igx-column>
+          <igx-action-strip>
+            <igx-grid-pinning-actions></igx-grid-pinning-actions>
+            <igx-grid-editing-actions [addRow]="true"></igx-grid-editing-actions>
+          </igx-action-strip>
+        </igx-grid>
+      </div>
+    </div>
+  </div>
+</div>

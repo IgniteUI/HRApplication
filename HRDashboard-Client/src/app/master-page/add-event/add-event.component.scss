@@ -1,0 +1,76 @@
+:host {
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+}
+.row-layout {
+  display: flex;
+}
+
+.error-message {
+  text-align: center;
+  margin: 2rem 0;
+  font-weight: bold;
+  color: red;
+}
+
+.group {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  min-width: 50px;
+  min-height: 50px;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.column-layout {
+  display: flex;
+  flex-direction: column;
+}
+.group_1 {
+  background-color: white;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  padding: 32px;
+  min-width: 750px;
+  min-height: 50px;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.group_2 {
+  justify-content: space-between;
+  align-items: stretch;
+  align-content: flex-start;
+  position: relative;
+  margin: 2rem 0 0;
+  width: 849px;
+  min-width: 50px;
+  min-height: 50px;
+  align-self: center;
+}
+.h2 {
+  text-align: center;
+  height: max-content;
+  min-width: min-content;
+}
+.input {
+  width: 300px;
+  height: max-content;
+  min-width: min-content;
+  flex-shrink: 0;
+}
+.user-input {
+  width: 327px;
+  height: max-content;
+  min-width: min-content;
+  flex-shrink: 0;
+}
+.button {
+  margin: 2rem 0 0;
+  width: 263px;
+  height: max-content;
+  align-self: center;
+}

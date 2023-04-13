@@ -1,0 +1,24 @@
+<div class="row-layout group">
+  <div class="column-layout group_1">
+    <h2 class="h2">
+      Add Role to user
+    </h2>
+    <div class="row-layout group_2">
+      <igx-select type="border" class="select"[(ngModel)]="email">
+        <igx-select-item *ngFor="let user of users; index as i;" value="{{user.email}}">
+          {{user.email}}
+      </igx-select-item>
+        <label igxLabel>Email</label>
+      </igx-select>
+      <igx-select type="border" class="select"[(ngModel)]="role">
+        <igx-select-item value="Administrator">
+          Administrator
+        </igx-select-item>
+        <label igxLabel>Role</label>
+      </igx-select>
+    </div>
+    <button igxButton="raised" (click)="onSubmit($event)" igxRipple class="button">
+      Submit
+    </button>
+  </div>
+</div>

@@ -1,0 +1,74 @@
+:host {
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+}
+.column-layout {
+  display: flex;
+  flex-direction: column;
+}
+.background {
+  background-image: url("/assets/background.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  justify-content: flex-end;
+  align-items: stretch;
+  align-content: flex-start;
+  bottom: 0;
+  position: absolute;
+  width: 1695px;
+  height: 1135px;
+  min-width: 50px;
+  min-height: 330px;
+}
+.group {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  position: relative;
+  width: 1694px;
+  height: 892px;
+  min-width: 50px;
+  min-height: 50px;
+}
+.h2 {
+  text-align: center;
+  margin: 2rem;
+  height: max-content;
+  min-width: min-content;
+  align-self: center;
+}
+.hyperlink {
+  text-align: center;
+  color: hsla(var(--ig-info-500));
+  cursor: pointer;
+  height: max-content;
+  min-width: min-content;
+}
+.input {
+  width: 473px;
+  height: max-content;
+  min-width: min-content;
+  align-self: center;
+}
+.input_1 {
+  margin: 1rem;
+  width: 473px;
+  height: max-content;
+  min-width: min-content;
+  align-self: center;
+}
+.button {
+  margin: 2rem;
+  width: 315px;
+  height: max-content;
+  align-self: center;
+}
+.error-message {
+  text-align: center;
+  margin: 2rem 0;
+  font-weight: bold;
+  color: red;
+}

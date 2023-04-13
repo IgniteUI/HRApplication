@@ -1,0 +1,34 @@
+<div class="column-layout background">
+  <div class="column-layout group">
+    <h2 class="h2">
+      Register 
+    </h2>
+    <p class="error-message">{{errorMessage}}</p>
+  <igx-input-group type="border" class="input">
+    <input type="text" required igxInput [(ngModel)]="firstName"/>
+    <label igxLabel>FirstName</label>
+  </igx-input-group>
+  <igx-input-group type="border" class="input_1">
+    <input type="text" required igxInput [(ngModel)]="lastName"/>
+    <label igxLabel>Lastname</label>
+  </igx-input-group>
+  <igx-input-group type="border" class="input_1">
+    <input type="email" required igxInput [(ngModel)]="email"/>
+    <label igxLabel>Email</label>
+  </igx-input-group>
+  <igx-input-group type="border" class="input_1">
+    <input type="password" required igxInput [(ngModel)]="password"/>
+    <label igxLabel>Password</label>
+  </igx-input-group>
+  <igx-input-group type="border" class="input_1">
+    <input type="password" required igxInput [(ngModel)]="confirmedPassword"/>
+    <label igxLabel>Confirm password</label>
+  </igx-input-group>
+  <button (click)="onSubmit($event)" igxButton="raised" igxRipple class="button">
+    Submit
+  </button>
+    <a target="_blank" routerLink="/login-page" class="ig-typography__body-1 hyperlink">
+      Already have an account? Sign In
+    </a>
+  </div>
+</div>

@@ -1,0 +1,30 @@
+<div class="row-layout group">
+  <div class="column-layout group_1">
+    <h2 class="h2">
+      Add Event
+    </h2>
+    <div class="row-layout group_2">
+      <igx-input-group type="border" class="input">
+        <input type="text" [required]="true" igxInput  [(ngModel)]="title" />
+        <label igxLabel>Title</label>
+      </igx-input-group>
+      <igx-input-group type="border" class="user-input">
+        <input type="text" [required]="true" igxInput [(ngModel)]="category" />
+        <label igxLabel>Category</label>
+      </igx-input-group>
+    </div>
+    <div class="row-layout group_2">
+      <igx-input-group type="border" class="input">
+        <input type="text" [required]="true" igxInput [(ngModel)]="emails" />
+        <label igxLabel>Users emails</label>
+      </igx-input-group>
+      <igx-input-group type="border" class="user-input">
+        <label igxLabel for="inputField">Date</label>
+        <input name="inputField" [(ngModel)]="date" [required]="false" [disabled]="false" igxInput igxDateTimeEditor="HH:mm/dd/MM/yyyy" displayFormat="shortDate" [spinLoop]="true" />
+      </igx-input-group>
+    </div>
+    <button (click)="onSubmit($event)" igxButton="raised" igxRipple class="button">
+      Submit
+    </button>
+  </div>
+</div>
